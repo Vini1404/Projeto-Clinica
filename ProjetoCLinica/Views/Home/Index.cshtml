@@ -1,0 +1,39 @@
+﻿<link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<section class="row" aria-labelledby="aspnetTitle">
+    <h1 id="title">Clínica dos Duentueidos</h1>
+    <p class="lead">Cadastre Médicos, Pacientes, Atendimentos e Especialidades além de Listar os agendamentos e buscar por data</p>
+    <hr />
+</section>
+<br />
+<h1 class="text-center" style="text-transform:uppercase">Links de Acesso</h1>
+<br />
+<h5>
+    <i class="fa fa-heartbeat" aria-hidden="true"></i> @Html.ActionLink("Cadastrar Médico", "cadMedico")
+</h5>
+<br />
+<h5>
+    <i class="fa fa-user" aria-hidden="true"></i> @Html.ActionLink("Cadastrar Pacientes", "cadPaciente")
+</h5>
+<br />
+<h5>
+    <i class="fa fa-address-book" aria-hidden="true"></i> @Html.ActionLink("Cadastrar Atendimento", "cadAtendimento")
+</h5>
+<br />
+<h5>
+    <i class="fa fa-plus" aria-hidden="true"></i> @Html.ActionLink("Adicionar Especialidade", "cadEsp")
+</h5>
+<br />
+<h5>
+    <i class="fa fa-book" aria-hidden="true"></i> @Html.ActionLink("Agendamentos", "consAgenda")
+</h5>
+<br />
+<h5>
+    <i class="fa fa-calendar" aria-hidden="true"></i> @Html.ActionLink("Buscar por Data", "consAgendaBusca")
+</h5>
+<br />
+

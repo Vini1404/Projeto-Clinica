@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "cadEsp";
+}
+
+<h2>Cadastrar Especialidade</h2>
+
+@using (Html.BeginForm("cadesp", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <table>
+        <tr>
+            <td>Especialidade: </td>
+            <td>
+            <input type="text" name="txtesp" id="txtesp" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <input type="submit" value="Cadastrar" name="btn" id="btn" />
+            </td>
+        </tr>
+    </table>
+}
+<br />
+@ViewBag.msg
